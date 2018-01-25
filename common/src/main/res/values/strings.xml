@@ -1,4 +1,8 @@
 <resources>
+
     <string name="app_name">Common</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="could_not_connect">Could not connect</string>
+    <string name="there_was_a_problem">There was a problem</string>
 
 </resources>
