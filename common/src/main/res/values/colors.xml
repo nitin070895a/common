@@ -4,6 +4,8 @@
   <color name="colorPrimaryDark">#303F9F</color>
   <color name="colorAccent">#FF4081</color>
 
+  <color name="backgroundColor">#e9e9e9</color>
+
   <color name="transparent">#00000000</color>
   <color name="black">#000000</color>
   <color name="white">#ffffff</color>
@@ -56,5 +58,18 @@
   <color name="brown_status">#5D4037</color>
 
   <color name="gold">#D39234</color>
+
+  <color name="filtered_blue">#552196F3</color>
+  <color name="filtered_red">#44d32f2f</color>
+  <color name="filtered_green">#44689F38</color>
+
+  <item name="tranparentblue" type="color">#802196F3</item>
+  <item name="tranparentpurple" type="color">#95FF5722</item>
+  <item name="tranparentgreen" type="color">#802196F3</item>
+  <item name="tranparentorange" type="color">#95FF5722</item>
+  <item name="tranparentred" type="color">#80d32f2f</item>
+  <item name="tranparentdarkpurple" type="color">#902196F3</item>
+  <item name="tranparentdarkgreen" type="color">#80689F38</item>
+  <item name="tranparentdarkred" type="color">#95FFFF00</item>
 
 </resources>
