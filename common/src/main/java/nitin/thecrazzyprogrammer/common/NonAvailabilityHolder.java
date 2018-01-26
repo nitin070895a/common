@@ -1,4 +1,4 @@
-package nitin.thecrazzyprogrammer.generics.Views;
+package nitin.thecrazzyprogrammer.common;
 
 import android.content.Context;
 import android.support.v4.content.ContextCompat;
@@ -9,8 +9,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import nitin.thecrazzyprogrammer.generics.R;
 
 
 /**
