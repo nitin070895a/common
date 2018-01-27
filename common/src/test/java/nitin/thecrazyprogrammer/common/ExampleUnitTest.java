@@ -1,4 +1,4 @@
-package nitin.thecrazzyprogrammer.common;
+package nitin.thecrazyprogrammer.common;
 
 import org.junit.Test;
 

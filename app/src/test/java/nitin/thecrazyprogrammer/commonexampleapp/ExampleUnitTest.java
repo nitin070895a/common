@@ -1,4 +1,4 @@
-package nitin.thecrazzyprogrammer.commonexampleapp;
+package nitin.thecrazyprogrammer.commonexampleapp;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package nitin.thecrazzyprogrammer.common;
+package nitin.thecrazyprogrammer.common;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
