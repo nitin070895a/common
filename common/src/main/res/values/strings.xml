@@ -5,5 +5,8 @@
     <string name="no_internet">No internet connection</string>
     <string name="could_not_connect">Could not connect</string>
     <string name="there_was_a_problem">There was a problem</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="done">Done</string>
 
 </resources>
