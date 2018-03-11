@@ -7,8 +7,8 @@
     android:layout_height="?attr/actionBarSize"
     app:tabGravity="fill"
     android:elevation="4dp"
-    app:tabIndicatorColor="@color/colorAccent"
-    android:background="@color/colorPrimary"
-    app:tabTextColor="@color/white"
-    app:tabSelectedTextColor="@color/colorAccent"
+    app:tabIndicatorColor="?attr/colorAccent"
+    android:background="?attr/colorPrimary"
+    app:tabTextColor="?android:textColorPrimaryInverse"
+    app:tabSelectedTextColor="?attr/colorAccent"
     app:tabMode="fixed" />

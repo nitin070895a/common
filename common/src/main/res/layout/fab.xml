@@ -10,7 +10,7 @@
     android:layout_marginRight="@dimen/fab_margin"
     android:scaleType="centerCrop"
     android:src="@android:drawable/ic_popup_reminder"
-    android:tint="#ffffff"
+    android:tint="?android:textColorPrimaryInverse"
     app:rippleColor="@color/white"
     android:visibility="gone"
     app:fabSize="normal" />
