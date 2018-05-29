@@ -9,4 +9,8 @@
     <string name="ok">Ok</string>
     <string name="done">Done</string>
 
+    <string name="grant">Grant</string>
+    <string name="deny">Deny</string>
+    <string name="permission_required">Permission required</string>
+
 </resources>
