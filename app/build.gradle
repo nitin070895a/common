@@ -1,19 +1,21 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.0"
+
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration.getAt('complie_sdk_version')
+    buildToolsVersion globalConfiguration.getAt('build_tools_version')
 
     defaultConfig {
-        applicationId "nitin.thecrazyprogrammer.commonexampleapp"
-        minSdkVersion 15
-        targetSdkVersion 26
+        minSdkVersion globalConfiguration.getAt('min_sdk_version')
+        targetSdkVersion globalConfiguration.getAt('target_sdk_version')
         versionCode 1
         versionName "1.0"
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled globalConfiguration.getAt('minify_enabled')
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -21,6 +23,9 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:25.1.0'
-    compile project(':common')
+
+    def libs = rootProject.ext.libraries
+
+    compile libs.appcompat
+    compile libs.common
 }

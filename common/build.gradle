@@ -1,18 +1,21 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion "26.0.0"
+
+    def globalConfiguration = rootProject.extensions.getByName("ext")
+
+    compileSdkVersion globalConfiguration.getAt('complie_sdk_version')
+    buildToolsVersion globalConfiguration.getAt('build_tools_version')
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 26
+        minSdkVersion globalConfiguration.getAt('min_sdk_version')
+        targetSdkVersion globalConfiguration.getAt('target_sdk_version')
         versionCode 5
         versionName "1.4"
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled globalConfiguration.getAt('minify_enabled')
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -20,7 +23,9 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile "com.android.support:design:$rootProject.ext.support_version"
-    compile "com.android.support:support-v4:$rootProject.ext.support_version"
-    compile "com.android.support:recyclerview-v7:$rootProject.ext.support_version"
+
+    def libs = rootProject.ext.libraries
+    compile libs.appcompat
+    compile libs.design
+
 }

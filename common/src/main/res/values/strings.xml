@@ -13,4 +13,6 @@
     <string name="deny">Deny</string>
     <string name="permission_required">Permission required</string>
 
+    <string name="msg_how_to_give_permission_from_settings">Please navigate to settings and give storage permission for the app to function</string>
+
 </resources>
